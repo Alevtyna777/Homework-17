@@ -2,34 +2,28 @@ public class AUserRegistration {
 
     private String firstName;
     private int birthdayDate;
+    private int monthOfBirthday;
+    private int yearOfBirthday;
     private String email;
     private int phoneNumber;
-
-
-    public AUserRegistration(String firstName, int birthdayDate, String email, int phoneNumber) {
-        this.firstName = firstName;
-        this.birthdayDate = birthdayDate;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-
-    }
-
     private String lastName;
     private int weight;
     private int pressure;
     int theNumberOFStepsTakenPerDay;
     private int age;
 
-    public AUserRegistration(String michael, String s, String email, String s1, int i, String s2, int i1) {
-    }
 
-
-    public void AUserRegistrationVariableParameters(String lastName, int weight, int pressure, int theNumberOFStepsTakenPerDay) {
+    public AUserRegistration(String firstName, int birthdayDate, int monthOfBirthday, int yearOfBirthday , String email, int phoneNumber, String lastName, int weignt, int pressure, int theNumberOfStepsTakenPerDay, int age) {
+        this.firstName = firstName;
+        this.birthdayDate = birthdayDate;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
         this.lastName = lastName;
         this.weight = weight;
         this.pressure = pressure;
         this.theNumberOFStepsTakenPerDay = theNumberOFStepsTakenPerDay;
         this.age = 2020;
+
     }
 
     public String getFirstName() {
@@ -39,7 +33,12 @@ public class AUserRegistration {
     public int birthdayDate() {
         return this.birthdayDate;
     }
-
+    public int monthOfBirthday() {
+        return this.monthOfBirthday;
+    }
+    public int yearOfBirthday() {
+        return this.yearOfBirthday;
+    }
     public String getEmail() {
         return this.email;
     }
@@ -81,7 +80,7 @@ public class AUserRegistration {
 
 
        public void printAUserRegistrationInformation(){
-        System.out.println("Display current parameters specifed by a user");
+        System.out.println("this");
     }
     @Override
     public String toString() {
@@ -99,10 +98,6 @@ return "AUserRegistrationInformation:\n" +
 
     }
 
-    public void setEmail(String s) {
-    }
 
-    public void setPressure(int i, int i1) {
-    }
 }
 
