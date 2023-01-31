@@ -9,11 +9,11 @@ public class AUserRegistration {
     private String lastName;
     private int weight;
     private int pressure;
-    int theNumberOFStepsTakenPerDay;
+    int theNumberOfStepsTakenPerDay;
     private int age;
 
 
-    public AUserRegistration(String firstName, int birthdayDate, int monthOfBirthday, int yearOfBirthday , String email, int phoneNumber, String lastName, int weignt, int pressure, int theNumberOfStepsTakenPerDay, int age) {
+    public AUserRegistration(String firstName, int birthdayDate, int monthOfBirthday, int yearOfBirthday , String email, int phoneNumber, String lastName, int weight, int pressure, int theNumberOfStepsTakenPerDay, int age) {
         this.firstName = firstName;
         this.birthdayDate = birthdayDate;
         this.email = email;
@@ -21,8 +21,8 @@ public class AUserRegistration {
         this.lastName = lastName;
         this.weight = weight;
         this.pressure = pressure;
-        this.theNumberOFStepsTakenPerDay = theNumberOFStepsTakenPerDay;
-        this.age = 2020;
+        this.theNumberOfStepsTakenPerDay = theNumberOfStepsTakenPerDay;
+        this.age = 2020 - yearOfBirthday ;
 
     }
 
@@ -34,7 +34,7 @@ public class AUserRegistration {
         return this.birthdayDate;
     }
     public int monthOfBirthday() {
-        return this.monthOfBirthday;
+        return this.monthOfBirthday ;
     }
     public int yearOfBirthday() {
         return this.yearOfBirthday;
@@ -57,8 +57,8 @@ public class AUserRegistration {
         return this.pressure;
     }
 
-    public int getTheNumberOFStepsTakenPerDay() {
-        return this.theNumberOFStepsTakenPerDay;
+    public int getTheNumberOfStepsTakenPerDay() {
+        return this.theNumberOfStepsTakenPerDay;
 
     }
 
@@ -75,25 +75,25 @@ public class AUserRegistration {
 
     }
     public void setTheNumberOFStepsTakenPerDay(int theNumberOFStepsTakenPerDay) {
-        this.theNumberOFStepsTakenPerDay = theNumberOFStepsTakenPerDay;
+        this.theNumberOfStepsTakenPerDay = theNumberOFStepsTakenPerDay;
     }
 
 
        public void printAUserRegistrationInformation(){
-        System.out.println("this");
+        System.out.println(this);
     }
     @Override
     public String toString() {
 return "AUserRegistrationInformation:\n" +
-        "firstName" + this.firstName + "\n" +
-       "birthdayDate" + this.birthdayDate + "\n" +
-       "email" + this.email  + "\n" +
-        "phoneNumbe"+ this.phoneNumber  + "\n" +
+        "firstName " + this.firstName + "\n" +
+       "birthdayDate " + this.birthdayDate + "\n" +
+       "email " + this.email  + "\n" +
+        "phoneNumber "+ this.phoneNumber  + "\n" +
        "lastName " + this.lastName + "\n" +
-        " weight" +  this.weight+ "\n" +
-        " pressure" +  this.pressure  + "\n" +
-        "theNumberOFStepsTakenPerDay  " +  this.theNumberOFStepsTakenPerDay  + "\n" +
-        " age " + this.age + "\n" + "\n" ;
+        " weight " +  this.weight+ "\n" +
+        " pressure " +  this.pressure  + "\n" +
+        "theNumberOFStepsTakenPerDay  " +  this.theNumberOfStepsTakenPerDay  + "\n" +
+        " age " + this.age + "\n"  + "\n" ;
 
 
     }
